@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript 30 Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My JavaScript 30 Projects</h1>
+  <div class="grid" id="projects"></div>
+
+  <script>
+    const projects = [
+      "01-Drum-Kit",
+      "02-CSS-JS-Clock",
+      "03-Playing-with-CSS-Variables-and-JS",
+      "04-Array-Cardio-Day-1",
+      "05-Flex-Panels-Image-Gallery",
+      "06-Ajax-Type-Ahead",
+      "07-Array-Cardio-Day-2",
+      "08-Fun-with-HTML5-Canvas",
+      "09-Dev-Tools-Tricks",
+      "10-Hold-Shift-to-Check-Multiple-Checkboxes",
+      "11-Custom-HTML5-Video-Player",
+      "12-Key-Sequence-Detection",
+      "13-Slide-In-on-Scroll",
+      "14-Object-and-Arrays-Reference-VS-Copy",
+      "15-LocalStorage-and-Event-Delegation",
+      "16-CSS-Text-Shadow-Mouse-Move-Effect",
+      "17-Sorting-Band-Names",
+      "18-Tally-String-Times-with-Reduce",
+      "19-Unreal-Webcam-Fun",
+      "20-Native-Speech-Recognition",
+      "21-Geolocation-Speedometer-and-Compass",
+      "22-Follow-Along-Links",
+      "23-Speech-Synthesis",
+      "24-Sticky-Nav",
+      "25-Event-Capture-Propagation-Bubbling-Once",
+      "26-Stripe-Follow-Along-Dropdown",
+      "27-Click-and-Drag-to-Scroll",
+      "28-Video-Speed-Controller-UI",
+      "29-Countdown-Clock",
+      "30-Whack-A-Mole"
+    ];
+
+    const container = document.getElementById('projects');
+    projects.forEach(name => {
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `<a href="${name}/index.html">${name}</a>`;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
