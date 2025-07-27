@@ -1,87 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link rel="stylesheet" href="index.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="keys">
+      <div data-key="KeyA" class="key">
+        <kbd>A</kbd>
+        <span>a1.wav</span>
+      </div>
+      <div data-key="KeyW" class="key">
+        <kbd>W</kbd>
+        <span>a1s.wav</span>
+      </div>
+      <div data-key="KeyS" class="key">
+        <kbd>S</kbd>
+        <span>b1.wav</span>
+      </div>
+      <div data-key="KeyD" class="key">
+        <kbd>D</kbd>
+        <span>c1.wav</span>
+      </div>
+      <div data-key="KeyR" class="key">
+        <kbd>R</kbd>
+        <span>c1s.wav</span>
+      </div>
+      <div data-key="KeyF" class="key">
+        <kbd>F</kbd>
+        <span>c2.wav</span>
+      </div>
+      <div data-key="KeyT" class="key">
+        <kbd>T</kbd>
+        <span>d1.wav</span>
+      </div>
+      <div data-key="KeyG" class="key">
+        <kbd>G</kbd>
+        <span>d1s.wav</span>
+      </div>
+      <div data-key="KeyY" class="key">
+        <kbd>Y</kbd>
+        <span>e1.wav</span>
+      </div>
+      <div data-key="KeyH" class="key">
+        <kbd>H</kbd>
+        <span>f1.wav</span>
+      </div>
+      <div data-key="KeyU" class="key">
+        <kbd>U</kbd>
+        <span>f1s.wav</span>
+      </div>
+      <div data-key="KeyJ" class="key">
+        <kbd>J</kbd>
+        <span>g1.wav</span>
+      </div>
+      <div data-key="KeyI" class="key">
+        <kbd>I</kbd>
+        <span>g1s.wav</span>
+      </div>
+    </div>
 
-<div class="keys">
-  <div data-key="KeyA" class="key">
-    <kbd>A</kbd>
-    <span>a1.wav</span>
-  </div>
-  <div data-key="KeyW" class="key">
-    <kbd>W</kbd>
-    <span>a1s.wav</span  >
-  </div>
-  <div data-key="KeyS" class="key">
-    <kbd>S</kbd>
-    <span>b1.wav</span>
-  </div>
-  <div data-key="KeyD" class="key">
-    <kbd>D</kbd>
-    <span>c1.wav</span>
-  </div>
-  <div data-key="KeyR" class="key">
-    <kbd>R</kbd>
-    <span>c1s.wav</span>
-  </div>
-  <div data-key="KeyF" class="key">
-    <kbd>F</kbd>
-    <span>c2.wav</span>
-  </div>
-  <div data-key="KeyT" class="key">
-    <kbd>T</kbd>
-    <span>d1.wav</span>
-  </div>
-  <div data-key="KeyG" class="key">
-    <kbd>G</kbd>
-    <span>d1s.wav</span>
-  </div>
-  <div data-key="KeyY" class="key">
-    <kbd>Y</kbd>
-    <span>e1.wav</span>
-  </div>
-  <div data-key="KeyH" class="key">
-    <kbd>H</kbd>
-    <span>f1.wav</span>
-  </div>
-  <div data-key="KeyU" class="key">
-    <kbd>U</kbd>
-    <span>f1s.wav</span>
-  </div>
-  <div data-key="KeyJ" class="key">
-    <kbd>J</kbd>
-    <span>g1.wav</span >
-  </div>
-  <div data-key="KeyI" class="key">
-    <kbd>I</kbd>
-    <span>g1s.wav</span>
-  </div>
-</div>
+    <audio data-key="KeyA" src="sounds/a1.wav"></audio>
+    <audio data-key="KeyW" src="sounds/a1s.wav"></audio>
+    <audio data-key="KeyS" src="sounds/b1.wav"></audio>
+    <audio data-key="KeyD" src="sounds/c1.wav"></audio>
+    <audio data-key="KeyR" src="sounds/c1s.wav"></audio>
+    <audio data-key="KeyF" src="sounds/c2.wav"></audio>
+    <audio data-key="KeyT" src="sounds/d1.wav"></audio>
+    <audio data-key="KeyG" src="sounds/d1s.wav"></audio>
+    <audio data-key="KeyY" src="sounds/e1.wav"></audio>
+    <audio data-key="KeyH" src="sounds/f1.wav"></audio>
+    <audio data-key="KeyU" src="sounds/f1s.wav"></audio>
+    <audio data-key="KeyJ" src="sounds/g1.wav"></audio>
+    <audio data-key="KeyI" src="sounds/g1s.wav"></audio>
 
-
-  <audio data-key="KeyA" src="sounds/a1.wav"></audio>
-  <audio data-key="KeyW" src="sounds/a1s.wav"></audio>
-  <audio data-key="KeyS" src="sounds/b1.wav"></audio>
-  <audio data-key="KeyD" src="sounds/c1.wav"></audio>
-  <audio data-key="KeyR" src="sounds/c1s.wav"></audio>
-  <audio data-key="KeyF" src="sounds/c2.wav"></audio>
-  <audio data-key="KeyT" src="sounds/d1.wav"></audio>
-  <audio data-key="KeyG" src="sounds/d1s.wav"></audio>
-  <audio data-key="KeyY" src="sounds/e1.wav"></audio>
-  <audio data-key="KeyH" src="sounds/f1.wav"></audio>
-  <audio data-key="KeyU" src="sounds/f1s.wav"></audio>
-  <audio data-key="KeyJ" src="sounds/g1.wav"></audio>
-  <audio data-key="KeyI" src="sounds/g1s.wav"></audio>
-
-
-<script src="index.js">
-    
-</script>
-    
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
